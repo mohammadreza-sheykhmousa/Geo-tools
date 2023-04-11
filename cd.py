@@ -6,7 +6,7 @@ from rasterio.plot import show
 import matplotlib
 
 # Folder containing TIF files to mosaic
-folder_path = r'C:\datasets\Planet\France-power-plant\2021'
+folder_path = r'C:\datasets\'
 
 # Get folder name and create output filename
 folder_name = os.path.basename(folder_path)
