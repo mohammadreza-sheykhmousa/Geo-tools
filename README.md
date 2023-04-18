@@ -12,13 +12,21 @@ Geo-tools/
 │   ├── pre_trained_models/
 │   └── fine_tuned_models/
 ├── src/
-│   ├── data_preprocessing/
-│   ├── model_training/
-│   ├── model_evaluation/
-│   ├── model_optimization/
-│   └── output_generation/
+│   ├── main/
+│   │   └── Geo-tools/
+│   │       ├── __init__.py
+│   │       ├── main.py
+│   │       ├── mosaic.py
+│   │       └── crop-resample.py
+│   └── test/
+│       └── Geo-tools/
+│           ├── __init__.py
+│           ├── test_mosaic.py
+│           └── test_resample.py
 ├── requirements.txt
+├── .gitignore
 ├── LICENSE
 └── README.md
+
 
 ```
