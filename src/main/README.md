@@ -20,3 +20,5 @@ Set the path to the folder containing TIF files to mosaic.
 - Write the mosaic image to a new TIF file using rasterio.
 
 - Display the mosaic image using show function from rasterio.plot module.
+
+**crop.py** is a python script that defines a function *crop_images* that takes in two satellite image paths and an output directory as arguments. The function opens the two images using rasterio, checks if their spatial resolutions are the same, and resamples the smaller image to the bigger resolution if needed. It then checks if the spectral resolutions of the images are the same, and gets the overlapping area of the two images. The function crops the two images to the overlapping area and writes the cropped images to disk using rasterio. The function prints warnings if the spatial or spectral resolutions of the images are different.
