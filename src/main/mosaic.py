@@ -5,6 +5,8 @@ from rasterio.merge import merge
 from rasterio.plot import show
 import matplotlib
 
+#This code assume Skysat as input. Moreinfo: https://webapps.itc.utwente.nl/sensor/getsen.aspx?name=SkySat
+
 # Folder containing TIF files to mosaic
 folder_path = r"C:\dataset"
 
