@@ -22,7 +22,7 @@ def mask_images(image_path1, image_path2, output_dir):
     """
     with rasterio.open(image_path1) as src1, rasterio.open(image_path2) as src2:
         # Read the data and mask values equal to 0 for the first file
-        data1 = src1.read(1)
+        data1 = src1.read()
         mask1 = data1 != 0
 
         # Read the data and mask values equal to 0 for the second file
